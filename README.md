@@ -24,18 +24,18 @@
 ***
 
 ## 下载并配置MultiMC
-1. 点击[链接](https://multimc.org/#Download)下载MultiMC，或者在群文件夹中下载软件
-2. 在心仪的文件夹中解压得到如图所示以下文件：
+* 点击[链接](https://multimc.org/#Download)下载MultiMC，或者在群文件夹中下载软件
+* 在心仪的文件夹中解压得到如图所示以下文件：
 <div align="center"><img src="https://raw.githubusercontent.com/SakuradaYuki/Server_Help/main/Pictures/Pic_1.png"/></div>
 
-3. 运行`MultiMC.exe`,你可以在列表下方找到中文语言包并替换
+* 运行`MultiMC.exe`,你可以在列表下方找到中文语言包并替换
 <div align="center"><img src="https://raw.githubusercontent.com/SakuradaYuki/Server_Help/main/Pictures/Pic_2.png"/></div>
 
-4. 来到下一个界面，由于平时游玩的MC为较新版本,所以选择`17.*.*`，点击选中即可
+* 来到下一个界面，由于平时游玩的MC为较新版本,所以选择`17.*.*`，点击选中即可
 内存建议按需配置，一般最大内存分配为8192MiB
 <div align="center"><img src="https://raw.githubusercontent.com/SakuradaYuki/Server_Help/main/Pictures/Pic_3.png"/></div>
 
-5. 在右上角处点击账户、管理账户、添加微软账户(或Mojang账户)。按照弹窗提示登录你的微软账号。
+* 在右上角处点击账户、管理账户、添加微软账户(或Mojang账户)。按照弹窗提示登录你的微软账号。
 <div align="center"><img src="https://raw.githubusercontent.com/SakuradaYuki/Server_Help/main/Pictures/Pic_4.png"/></div>
 
 **到此配置结束**
