@@ -26,17 +26,17 @@
 ## 下载并配置MultiMC
 * 点击[链接](https://multimc.org/#Download)下载MultiMC，或者在群文件夹中下载软件
 * 在心仪的文件夹中解压得到如图所示以下文件：
-<div align="center"><img src="https://raw.githubusercontent.com/SakuradaYuki/Server_Help/main/Pictures/Pic_1.png"/></div>
+<div align="center"><img src="https://pic.sakuradayuki.xyz/Server_Help/Pic_1.png"/></div>
 
 * 运行`MultiMC.exe`,你可以在列表下方找到中文语言包并替换
-<div align="center"><img src="https://raw.githubusercontent.com/SakuradaYuki/Server_Help/main/Pictures/Pic_2.png"/></div>
+<div align="center"><img src="https://pic.sakuradayuki.xyz/Server_Help/Pic_2.png"/></div>
 
 * 来到下一个界面，由于平时游玩的MC为较新版本,所以选择`17.*.*`，点击选中即可
 内存建议按需配置，一般最大内存分配为8192MiB
-<div align="center"><img src="https://raw.githubusercontent.com/SakuradaYuki/Server_Help/main/Pictures/Pic_3.png"/></div>
+<div align="center"><img src="https://pic.sakuradayuki.xyz/Server_Help/Pic_3.png"/></div>
 
 * 在右上角处点击账户、管理账户、添加微软账户(或Mojang账户)。按照弹窗提示登录你的微软账号。
-<div align="center"><img src="https://raw.githubusercontent.com/SakuradaYuki/Server_Help/main/Pictures/Pic_4.png"/></div>
+<div align="center"><img src="https://pic.sakuradayuki.xyz/Server_Help/Pic_4.png"/></div>
 
 **到此配置结束**
 
@@ -48,7 +48,7 @@
 例如: 1.19.2-原版生存-22.09.25.zip 、1.7.10-工业模组整合-19.01.01.zip
 时间作为大致判断整合包是否过期的依据，一般一个整合包游玩时间不会超过三个月
 * 点击左上角的添加实例，选择导入Zip压缩包，浏览，定位到下载得到的整合包，点击OK即可
-<div align="center"><img src="https://raw.githubusercontent.com/SakuradaYuki/Server_Help/main/Pictures/Pic_5.png"/></div>
+<div align="center"><img src="https://pic.sakuradayuki.xyz/Server_Help/Pic_5.png"/></div>
 
 **在添加整合包之前，建议提前下载对应版本的原版游戏，很简单的操作，不过多赘述**
 
