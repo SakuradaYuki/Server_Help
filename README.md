@@ -46,6 +46,8 @@
 
 <div align="center"><img src="https://picbed-1300514373.cos.ap-nanjing.myqcloud.com/Server_Help/Pic_4.png"/></div>
 
+</br>
+
 **到此配置结束**
 
 ---
@@ -61,6 +63,8 @@
 点击左上角的添加实例，选择导入Zip压缩包，浏览，定位到下载得到的整合包，点击OK即可
 
 <div align="center"><img src="https://picbed-1300514373.cos.ap-nanjing.myqcloud.com/Server_Help/Pic_5.png"/></div>
+
+</br>
 
 **在添加整合包之前，建议提前下载对应版本的原版游戏，很简单的操作，不过多赘述**
 
