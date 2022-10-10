@@ -8,3 +8,13 @@ layout: home
 > 以后会更换为 `mc.sakuradayuki.games`
 
 * 本站主要是一些教程类文章，并且还在建设当中
+
+
+<div>
+    <script>
+    </script>
+<!--
+    https://api.mcsrvstat.us/2/<address>
+    https://api.mcsrvstat.us/bedrock/2/<address>
+-->
+</div>
