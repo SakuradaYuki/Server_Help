@@ -156,16 +156,17 @@ Cluster Password = <string> # 密码
 
 这里来解释几个可能需要使用/修改/添加的参数
 
-|文件名|配置项|参数数据类型|说明|
-|:-|:-:|:-:|:-:|
-|MyDediServer<br>└ cluster.ini|[GAMEPLAY] -> pause_when_empty|bool|在无人时是否停止|
-|MyDediServer<br>└ cluster.ini|[GAMEPLAY] -> vote_kick_enabled|bool|投票踢人功能|
-|MyDediServer<br>└ cluster.ini|[NETWORK] -> tick_rate|int|每秒通信次数，越高游戏体验越好, 服务器负载也会变大|
-|MyDediServer<br>└ cluster.ini|[MISC] -> max_snapshots|int|最大快照数, 默认一天一个快照|
-|MyDediServer<br>└ cluster.ini|[SHARD] -> bind_ip|string|服务器监听的地址|
-|Caves<br>└ server.ini|[SHARD] -> master_ip|string|Master 服务器的地址|
-|Caves<br>└ server.ini|[SHARD] -> master_port|int|监听 Master 服务器的 UDP 端口|
-|Caves<br>└ server.ini|[SHARD] -> cluster_key|string|连接密码|
+| 文件名                        |             配置项              | 参数数据类型 |                        说明                        |
+| :---------------------------- | :-----------------------------: | :----------: | :------------------------------------------------: |
+| MyDediServer<br>└ cluster.ini | [GAMEPLAY] -> pause_when_empty  |     bool     |                  在无人时是否停止                  |
+| MyDediServer<br>└ cluster.ini | [GAMEPLAY] -> vote_kick_enabled |     bool     |                    投票踢人功能                    |
+| MyDediServer<br>└ cluster.ini |     [NETWORK] -> tick_rate      |     int      | 每秒通信次数，越高游戏体验越好, 服务器负载也会变大 |
+| MyDediServer<br>└ cluster.ini |  [NETWORK] -> whitelist_slots   |     int      |        白名单人员保留数目, 小于等于最大人数        |
+| MyDediServer<br>└ cluster.ini |     [MISC] -> max_snapshots     |     int      |            最大快照数, 默认一天一个快照            |
+| MyDediServer<br>└ cluster.ini |       [SHARD] -> bind_ip        |    string    |                  服务器监听的地址                  |
+| Caves<br>└ server.ini         |      [SHARD] -> master_ip       |    string    |                Master 服务器的地址                 |
+| Caves<br>└ server.ini         |     [SHARD] -> master_port      |     int      |           监听 Master 服务器的 UDP 端口            |
+| Caves<br>└ server.ini         |     [SHARD] -> cluster_key      |    string    |                      连接密码                      |
 
 解释一下 server.ini 中的 master_ip、master_port、cluster_key 的作用: 
 
@@ -185,17 +186,17 @@ Cluster Password = <string> # 密码
 
 [args] 可选:
 
-|args|说明|
-|:-:|:-:|
-|-port [1024 .. 65535]|强制服务器使用特定端口|
-|-tick [15 .. 60]|强制服务器以特定的 tick 速率运行|
-|-players [1 .. 64]|强制服务器中允许的最大玩家数, 最大64|
-|-console|启用命令行,可执行 Lua 代码|
-|-lan|局域网模式, 不出现在服务器列表, 无法拆礼物|
-|-persistent_storage_root \<path_to_root_folder\>|设置永久存储的根目录, 默认为 $HOME/.klei <br>配合 conf_dir 使用控制存档位置|
-|-conf_dir \<relative_path_to_save\>|强制服务器从备用目录加载保存和设置数据|
-|-cluster \<path_to_save_folder\>|存档文件夹的名字|
-|-shard \<world_name\>|世界的文件夹名称<br>如洞穴世界默认为Caves<br>主世界默认为Master|
+|                       args                       |                                    说明                                     |
+| :----------------------------------------------: | :-------------------------------------------------------------------------: |
+|              -port [1024 .. 65535]               |                           强制服务器使用特定端口                            |
+|                 -tick [15 .. 60]                 |                      强制服务器以特定的 tick 速率运行                       |
+|                -players [1 .. 64]                |                    强制服务器中允许的最大玩家数, 最大64                     |
+|                     -console                     |                         启用命令行,可执行 Lua 代码                          |
+|                       -lan                       |                 局域网模式, 不出现在服务器列表, 无法拆礼物                  |
+| -persistent_storage_root \<path_to_root_folder\> | 设置永久存储的根目录, 默认为 $HOME/.klei <br>配合 conf_dir 使用控制存档位置 |
+|       -conf_dir \<relative_path_to_save\>        |                   强制服务器从备用目录加载保存和设置数据                    |
+|         -cluster \<path_to_save_folder\>         |                              存档文件夹的名字                               |
+|              -shard \<world_name\>               |       世界的文件夹名称<br>如洞穴世界默认为Caves<br>主世界默认为Master       |
 
 存档最终将指向 \<path_to_root_folder\>/\<relative_path_to_save\>/\<path_to_save_folder\>
 
@@ -205,9 +206,41 @@ Cluster Password = <string> # 密码
 
 ---
 
-## MOD配置
+## MOD
+
+### MOD 文件获取
+
+假如你想下载 __简易血条DST__ , 在对应创意工坊网页, 右键复制网页URL, 得到 https://steamcommunity.com/sharedfiles/filedetails/?id=1207269058. 复制id=后的那串数字, 得到 1207269058.
+
+编辑 ~/Steam/steamapps/common/Don\'t\ Starve\ Together\ Dedicated\ Server/mod/dedicated_server_mods_setup.lua 文件
+
+添加 `ServerModSetup("1207269058")` 即可
+
+最终结果如下:
+
+```lua
+--There are two functions that will install mods, ServerModSetup and ServerModCollectionSetup. Put the calls to the functions in this file and they will be executed on boot.
+
+--ServerModSetup takes a string of a specific mod's Workshop id. It will download and install the mod to your mod directory on boot.
+	--The Workshop id can be found at the end of the url to the mod's Workshop page.
+	--Example: http://steamcommunity.com/sharedfiles/filedetails/?id=350811795
+	--ServerModSetup("350811795")
+
+--ServerModCollectionSetup takes a string of a specific mod's Workshop id. It will download all the mods in the collection and install them to the mod directory on boot.
+	--The Workshop id can be found at the end of the url to the collection's Workshop page.
+	--Example: http://steamcommunity.com/sharedfiles/filedetails/?id=379114180
+	--ServerModCollectionSetup("379114180")
+ServerModSetup("1207269058")
+
+```
+
+`--`开头的为注释, 阅读并掌握以后删掉即可
+
+### MOD 启用
 
 在 \<path_to_save_folder\>/\<world_name\> 文件夹下新建 modoverrides.lua
+
+此种方法可以独立设置每个存档启用的 mod
 
 模板如下
 
@@ -218,7 +251,7 @@ return {
 }
 ```
 
-假如你想订阅 __简易血条DST__ , 在对应创意工坊网页, 右键复制网页URL, 得到 https://steamcommunity.com/sharedfiles/filedetails/?id=1207269058. 复制id=后的那串数字, 得到 1207269058. 按照下方示例填入 dedicated_server_mods_setup.lua 中即可
+结果如下:
 
 ```lua
 return {
@@ -226,10 +259,60 @@ return {
 }
 ```
 
-或者你也可以导出本地存档中的 modoverrides.lua , 这样其实更方便, 网络上教程很多, 也可以直接在上方提到的 Fandom_zh-cn[Link] 中查看
+你可以导出本地存档中的 modoverrides.lua, 复制本地的 mod 源文件到服务器, 这样其实更方便, 网络上教程很多, 也可以直接在上方提到的 Fandom_zh-cn[Link] 中查看
 
 ---
 
 ## 防火墙端口相关
 
-就这样吧, 先摸了
+默认只需要放行 \<path_to_root_folder\>/\<relative_path_to_save\>/\<path_to_save_folder\>\<world_name\>\server.ini 中 [NETWORK] -> server_port 端口, 默认为11000, 协议为udp
+
+路径按照本文设置来的话就是 $HOME/.klei/DoNotStarveTogether/MyDediServer/Master/server.ini
+
+__到此, 已经完成饥荒服务器的基本设置, 下面会提到一些高级设置__
+
+---
+
+## 高级设置
+
+### 管理员、黑白名单
+
+在运行服务器的时候你可能会注意到这三行日志:
+
+```
+[00:00:00]: OnLoadPermissionList: $HOME/.klei//DoNotStarveTogether/MyDediServer/blocklist.txt (Failure)
+[00:00:00]: OnLoadPermissionList: $HOME/.klei//DoNotStarveTogether/MyDediServer/adminlist.txt (Failure)
+[00:00:00]: OnLoadUserIdList: $HOME/.klei//DoNotStarveTogether/MyDediServer/whitelist.txt (Failure)
+```
+
+它们分别是黑名单、管理员名单和白名单
+
+黑名单与白名单不需要解释。可以通过白名单人员保留数目 (MyDediServer cluster.ini 中的 [NETWORK] -> whitelist_slots) 将服务器配置为仅白名单人员可加入, 配合密码双重保险
+
+黑名单在游戏内按 <kbd>Tab</kbd>, 里面就可以直接 ban 人
+
+饥荒服务器的部分指令可以无视权限执行, 比如回档, 为了防止恶意操作可添加自己为管理员
+
+这三个文件的使用方式也很简单, 以添加自己为管理员为例:
+
+当然你得在 $HOME/.klei/DoNotStarveTogether/MyDediServer/ 下新建对应文本文件
+
+打开[网站](https://accounts.klei.com/account/info)并登录账号, 作者采用Steam账号登录
+
+找到 __Klei User ID__ 下面的 ID, 格式为 KU_\*\*\*\*\*\_\*\* , 直接复制粘贴到 adminlist.txt 即可, 一行填入一个ID
+
+服务器内其他人的UserID可以在日志中查询
+
+### 游戏内指令
+
+按 __<kbd>`</kbd>__ (通常叫飘号键) 唤出控制台
+
+|             指令              | 可选参数类型/格式 |                       解释                       |
+| :---------------------------: | :---------------: | :----------------------------------------------: |
+|           c_save()            |         /         |                   立刻保存世界                   |
+|         c_shutdown()          |       bool        | 为真时保存游戏后关闭服务器, 为假时不保存直接关闭 |
+|         c_rollback()          |        int        |          回档, int为回到倒数第几个存档           |
+|      c_regenerateworld()      |         /         |                     删档重开                     |
+|         c_announce()          |     "string"      |           发送公告, 内容需用引号括起来           |
+|          c_connect()          | "ip","port","psw" |            链接到指定服务器, 无需搜索            |
+| TheNet:Kick()<br>TheNet:Ban() |   Klei User ID    |                  踢人<br>封禁人                  |
