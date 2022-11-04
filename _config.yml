@@ -15,8 +15,9 @@
 # in the templates via {{ site.myvariable }}.
 title: SakuradaYuki
 description: 
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://help.sakuradayuki.xyz/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+remote_theme: SakuradaYuki/just-the-docs
 
 permalink: pretty
 
