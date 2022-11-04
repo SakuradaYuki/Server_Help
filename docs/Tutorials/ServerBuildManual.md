@@ -109,7 +109,8 @@ app_update <app_id> # app_id 就是服务端的 id 啦
 quit # 使用 quit 退出 SteamCMD
 ```
 
-<p style='color:#bb0000;text-align:center'>本文所有教程使用默认路径/设置</p>
+{: .important }
+> 本文所有教程使用默认路径/设置
 
 ---
 
