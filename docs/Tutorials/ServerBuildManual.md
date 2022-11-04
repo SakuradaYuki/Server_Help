@@ -22,10 +22,8 @@ ___不要执行你看不懂的指令___
 
 # 目录
 
-_点击跳转和复制都会有的, 就看我能鸽多久了, 现阶段直接 <kbd>Ctrl</kbd> + <kbd>F</kbd> 吧_
-
-1. 准备 SteamCMD
-2. Don't Starve together
+1. TOC
+{:toc}
 
 ---
 ---
