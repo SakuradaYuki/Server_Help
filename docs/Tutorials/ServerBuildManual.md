@@ -29,8 +29,9 @@ ___不要执行你看不懂的指令___
 # 准备SteamCMD
 
 {: .warning }
-> !!! Warning: Do not run steamcmd while operating as the root user. Doing so is a security risk. !!!
-> !!! 警告: 登录为 root 用户身份时不要运行 steamcmd. 这样做会带来安全风险。 !!!
+> Warning: Do not run steamcmd while operating as the root user. Doing so is a security risk.
+> 
+> 警告: 登录为 root 用户身份时不要运行 steamcmd. 这样做会带来安全风险。
 
 [官方文档[Link]](https://developer.valvesoftware.com/wiki/SteamCMD)
 
