@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: SakuradaYuki's Site
+title: SakuradaYuki
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
   服务器食用指南
@@ -29,7 +29,7 @@ twitter_username:
 github_username:  SakuradaYuki
 
 # Build settings
-remote_theme: just-the-docs/just-the-docs
+remote_theme: SakuradaYuki/just-the-docs
 plugins:
   - jekyll-feed
 # Exclude from processing.

@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Steam游戏服务器搭建指南
-tags: Tutorials
 permalink: /Tutorials/steamGameServerHostManual.html
+parent: Tutorials
 ---
 
 _写给自己看的 Steam 游戏的各种服务器的搭建教程_
@@ -297,9 +297,7 @@ __到此, 已经完成饥荒服务器的基本设置, 下面会提到一些高�
 
 当然你得在 $HOME/.klei/DoNotStarveTogether/MyDediServer/ 下新建对应文本文件
 
-打开[网站](https://accounts.klei.com/account/info)并登录账号, 作者采用Steam账号登录
-
-找到 __Klei User ID__ 下面的 ID, 格式为 KU_\*\*\*\*\*\_\*\* , 直接复制粘贴到 adminlist.txt 即可, 一行填入一个ID
+打开[网站](https://accounts.klei.com/account/info)并登录账号, 找到 __Klei User ID__ 下面的 ID, 格式为 KU_\*\*\*\*\*\_\*\* , 直接复制粘贴到 adminlist.txt 即可, 一行填入一个ID
 
 服务器内其他人的UserID可以在日志中查询
 
