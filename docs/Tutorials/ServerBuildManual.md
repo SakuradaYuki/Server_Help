@@ -18,7 +18,6 @@ _[Link]为官方/详细的文档_
 ___不要执行你看不懂的指令___
 
 ---
----
 
 # 目录
 
@@ -26,12 +25,12 @@ ___不要执行你看不懂的指令___
 {:toc}
 
 ---
----
 
 # 准备SteamCMD
 
-<p style='color:#bb0000;text-align:center'>!!! Warning: Do not run steamcmd while operating as the root user. Doing so is a security risk. !!!</p>
-<p style='color:#bb0000;text-align:center'>!!! 警告: 登录为 root 用户身份时不要运行 steamcmd. 这样做会带来安全风险。 !!!</p>
+{: .warning }
+> !!! Warning: Do not run steamcmd while operating as the root user. Doing so is a security risk. !!!
+> !!! 警告: 登录为 root 用户身份时不要运行 steamcmd. 这样做会带来安全风险。 !!!
 
 [官方文档[Link]](https://developer.valvesoftware.com/wiki/SteamCMD)
 
@@ -111,7 +110,6 @@ quit # 使用 quit 退出 SteamCMD
 
 <p style='color:#bb0000;text-align:center'>本文所有教程使用默认路径/设置</p>
 
----
 ---
 
 # Don't Starve together
