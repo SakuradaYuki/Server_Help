@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Steam游戏服务器搭建指南
-tags: Tutorials
 permalink: /Tutorials/steamGameServerHostManual.html
+parent: Tutorials
 ---
 
 _写给自己看的 Steam 游戏的各种服务器的搭建教程_
@@ -18,22 +18,20 @@ _[Link]为官方/详细的文档_
 ___不要执行你看不懂的指令___
 
 ---
----
 
 # 目录
 
-_点击跳转和复制都会有的, 就看我能鸽多久了, 现阶段直接 <kbd>Ctrl</kbd> + <kbd>F</kbd> 吧_
+1. TOC
+{:toc}
 
-1. 准备 SteamCMD
-2. Don't Starve together
-
----
 ---
 
 # 准备SteamCMD
 
-<p style='color:#bb0000;text-align:center'>!!! Warning: Do not run steamcmd while operating as the root user. Doing so is a security risk. !!!</p>
-<p style='color:#bb0000;text-align:center'>!!! 警告: 登录为 root 用户身份时不要运行 steamcmd. 这样做会带来安全风险。 !!!</p>
+{: .warning }
+> Warning: Do not run steamcmd while operating as the root user. Doing so is a security risk.
+> 
+> 警告: 登录为 root 用户身份时不要运行 steamcmd. 这样做会带来安全风险。
 
 [官方文档[Link]](https://developer.valvesoftware.com/wiki/SteamCMD)
 
@@ -111,9 +109,9 @@ app_update <app_id> # app_id 就是服务端的 id 啦
 quit # 使用 quit 退出 SteamCMD
 ```
 
-<p style='color:#bb0000;text-align:center'>本文所有教程使用默认路径/设置</p>
+{: .important }
+> 本文所有教程使用默认路径/设置
 
----
 ---
 
 # Don't Starve together
@@ -297,9 +295,7 @@ __到此, 已经完成饥荒服务器的基本设置, 下面会提到一些高�
 
 当然你得在 $HOME/.klei/DoNotStarveTogether/MyDediServer/ 下新建对应文本文件
 
-打开[网站](https://accounts.klei.com/account/info)并登录账号, 作者采用Steam账号登录
-
-找到 __Klei User ID__ 下面的 ID, 格式为 KU_\*\*\*\*\*\_\*\* , 直接复制粘贴到 adminlist.txt 即可, 一行填入一个ID
+打开[网站](https://accounts.klei.com/account/info)并登录账号, 找到 __Klei User ID__ 下面的 ID, 格式为 KU_\*\*\*\*\*\_\*\* , 直接复制粘贴到 adminlist.txt 即可, 一行填入一个ID
 
 服务器内其他人的UserID可以在日志中查询
 

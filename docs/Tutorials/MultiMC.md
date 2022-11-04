@@ -1,8 +1,8 @@
 ---
 layout: page
 title: MultiMC 食用教程
-tags: Tutorials
 permalink: /Tutorials/MultiMC.html
+parent: Tutorials
 ---
 
 # 前言
