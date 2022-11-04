@@ -29,7 +29,7 @@ twitter_username:
 github_username:  SakuradaYuki
 
 # Build settings
-theme: minima
+remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-feed
 # Exclude from processing.
