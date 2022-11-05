@@ -2,8 +2,8 @@
 layout: page
 title: SteamCMD 部署
 permalink: /Tutorials/steamGameServerHostManual/Steamcmd/
-parent: ServerBuildManual
-grand_parent: 
+parent: Steam游戏服务器搭建指南
+grand_parent: Tutorials
 ---
 
 # 准备SteamCMD

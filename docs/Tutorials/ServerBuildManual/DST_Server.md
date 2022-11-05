@@ -2,7 +2,7 @@
 layout: page
 title: 《饥荒：联机版》 服务器部署
 permalink: /Tutorials/steamGameServerHostManual/DST_Server/
-parent: ServerBuildManual
+parent: Steam游戏服务器搭建指南
 grand_parent: Tutorials
 ---
 
