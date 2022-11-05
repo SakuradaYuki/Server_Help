@@ -3,6 +3,7 @@ layout: page
 title: SteamCMD 部署
 permalink: /Tutorials/steamGameServerHostManual/Steamcmd/
 parent: ServerBuildManual
+grand_parent: 
 ---
 
 # 准备SteamCMD
