@@ -5,8 +5,7 @@ layout: home
 nav_order: 1
 ---
 
-* Minecraft服务器地址`mc.sakuradayuki.xyz`
-> 以后会更换为 `mc.sakuradayuki.games`
+* Minecraft服务器地址`mc.sakuradayuki.games`
 
 * 本站主要是一些教程类文章，并且还在建设当中
 
