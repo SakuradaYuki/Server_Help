@@ -4,7 +4,7 @@ nav_order: 1
 ---
 
 <script>
-    console.log("你好呀！(´・ω・`)")
+    console.log("你好呀！(´・ω・`)");
     console.log("今天去码头整薯条了吗")
 </script>
 
