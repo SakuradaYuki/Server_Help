@@ -6,6 +6,8 @@ parent: Steam游戏服务器搭建指南
 grand_parent: Tutorials
 ---
 
+{:toc}
+
 # 准备SteamCMD
 
 {: .warning }

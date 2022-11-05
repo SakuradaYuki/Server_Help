@@ -6,6 +6,8 @@ parent: Steam游戏服务器搭建指南
 grand_parent: Tutorials
 ---
 
+{:toc}
+
 # Don't Starve together
 
 [官方文档[Link]](https://forums.kleientertainment.com/forums/topic/64441-dedicated-server-quick-setup-guide-linux/) [Fandom[Link]](https://dontstarve.fandom.com/wiki/Guides/Don%E2%80%99t_Starve_Together_Dedicated_Servers) [Fandom_zh-cn[Link]](https://dontstarve.fandom.com/zh/wiki/%E5%A4%9A%E4%BA%BA%E7%89%88%E9%A5%A5%E8%8D%92%E7%8B%AC%E7%AB%8B%E6%9C%8D%E5%8A%A1%E5%99%A8)
