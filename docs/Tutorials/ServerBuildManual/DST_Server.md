@@ -123,7 +123,6 @@ Cluster Password = <string> # 密码
 	--Example: http://steamcommunity.com/sharedfiles/filedetails/?id=379114180
 	--ServerModCollectionSetup("379114180")
 ServerModSetup("1207269058")
-
 ```
 
 `--`开头的为注释, 阅读并掌握以后删掉即可
