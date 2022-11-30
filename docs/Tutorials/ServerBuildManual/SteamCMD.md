@@ -11,9 +11,9 @@ grand_parent: Tutorials
 # 准备SteamCMD
 
 {: .warning }
-> Warning: Do not run steamcmd while operating as the root user. Doing so is a security risk.
+> Do not run steamcmd while operating as the root user. Doing so is a security risk.
 > 
-> 警告: 登录为 root 用户身份时不要运行 steamcmd. 这样做会带来安全风险。
+> 登录为 root 用户身份时不要运行 steamcmd. 这样做会带来安全风险。
 
 [官方文档[Link]](https://developer.valvesoftware.com/wiki/SteamCMD)
 
@@ -92,6 +92,4 @@ quit # 使用 quit 退出 SteamCMD
 ```
 
 {: .important }
-> 本文所有教程使用默认路径/设置
-
----
+> 本站所有教程使用默认路径/设置
