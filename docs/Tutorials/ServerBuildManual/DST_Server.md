@@ -10,7 +10,7 @@ grand_parent: Tutorials
 
 # Don't Starve together
 
-[官方文档[Link]](https://forums.kleientertainment.com/forums/topic/64441-dedicated-server-quick-setup-guide-linux/) [Fandom[Link]](https://dontstarve.fandom.com/wiki/Guides/Don%E2%80%99t_Starve_Together_Dedicated_Servers) [Fandom_zh-cn[Link]](https://dontstarve.fandom.com/zh/wiki/%E5%A4%9A%E4%BA%BA%E7%89%88%E9%A5%A5%E8%8D%92%E7%8B%AC%E7%AB%8B%E6%9C%8D%E5%8A%A1%E5%99%A8)
+[官方文档[Link]](https://forums.kleientertainment.com/forums/topic/64441-dedicated-server-quick-setup-guide-linux/) [Fandom[Link]](https://dontstarve.fandom.com/wiki/Guides/Don’t_Starve_Together_Dedicated_Servers) [Fandom_zh-cn[Link]](https://dontstarve.fandom.com/zh/wiki/多人版饥荒独立服务器)
 
 __app_id: 343050__
 
@@ -23,15 +23,15 @@ __app_id: 343050__
 配置内容说明: 
 
 ```shell
-Server Token = <token> # 不用管
-Maximum Players = <int> # 最大人数
-Server Playstyle = <string> # 世界类型: Servival (生存), Relaxed (休闲), Endless (无尽), Wilderless (荒野), Lights out (永夜)
-Cluster Name = <string> # 服务器名称
+Server Token = <token>         # 不用管
+Maximum Players = <int>        # 最大人数
+Server Playstyle = <string>    # 世界类型: Servival (生存), Relaxed (休闲), Endless (无尽), Wilderless (荒野), Lights out (永夜)
+Cluster Name = <string>        # 服务器名称
 Cluster Description = <string> # 服务器简介
-Cluster Password = <string> # 密码
+Cluster Password = <string>    # 密码
 ```
 
-下载得到一个 MyDediServer.zip , 解压后得到以下文件
+下载得到一个 `MyDediServer.zip`, 解压后得到以下文件
 
 ```shell
 .
@@ -62,7 +62,7 @@ Cluster Password = <string> # 密码
 
 解释一下 server.ini 中的 master_ip、master_port、cluster_key 的作用: 
 
-饥荒服务器分为主世界与洞穴世界，这两个世界的服务端是独立运行的。洞穴世界的服务器可以架设到另一台服务器上，与主世界服务器依靠 master_ip, master_port, cluster_key 这三个参数来进行通讯, ip 端口和密码，这很好理解。这也使得多世界成为可能(大概吧)。
+饥荒服务器分为主世界与洞穴世界, 这两个世界的服务端是独立运行的. 洞穴世界的服务器可以架设到另一台服务器上, 与主世界服务器依靠 master_ip, master_port, cluster_key 这三个参数来进行通讯, ip 端口和密码, 这很好理解. 这也使得多世界成为可能(大概吧).
 
 ---
 
@@ -83,7 +83,7 @@ Cluster Password = <string> # 密码
 |              -port [1024 .. 65535]               |                           强制服务器使用特定端口                            |
 |                 -tick [15 .. 60]                 |                      强制服务器以特定的 tick 速率运行                       |
 |                -players [1 .. 64]                |                    强制服务器中允许的最大玩家数, 最大64                     |
-|                     -console                     |                         启用命令行,可执行 Lua 代码                          |
+|                     -console                     |                         启用命令行, 可执行 Lua 代码                         |
 |                       -lan                       |                 局域网模式, 不出现在服务器列表, 无法拆礼物                  |
 | -persistent_storage_root \<path_to_root_folder\> | 设置永久存储的根目录, 默认为 $HOME/.klei <br>配合 conf_dir 使用控制存档位置 |
 |       -conf_dir \<relative_path_to_save\>        |                   强制服务器从备用目录加载保存和设置数据                    |
