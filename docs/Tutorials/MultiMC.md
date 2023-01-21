@@ -15,7 +15,7 @@ parent: Tutorials
 > * [MultiMC](https://github.com/MultiMC/Launcher)
 > * [Jre8/JDK17](https://adoptium.net/zh-CN/temurin/releases/)
 
-Jre8/JDK17 [下载使用说明书](./Tutorials/JavaDownload.html)
+Jre8/JDK17 [下载使用说明书](./JavaDownload.html)
 
 ---
 
