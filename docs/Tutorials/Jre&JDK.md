@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 下载使用说明书
+title: Java下载使用说明书
 permalink: /Tutorials/JavaDownload.html
 parent: Tutorials
 ---
