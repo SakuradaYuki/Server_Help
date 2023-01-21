@@ -22,10 +22,10 @@ parent: Tutorials
 
 它们分别是:
 
-> 操作系统(Operating System)
-> 硬件架构(Architecture)
-> 包类型(Package Type)
-> 版本(Version)
+> 操作系统(Operating System)  
+> 硬件架构(Architecture)  
+> 包类型(Package Type)  
+> 版本(Version)  
 
 对于大部分用户来说(~~Linuxer 应该不会来看这篇文章吧~~), 操作系统选择 Windows, 硬件架构选择 x64, 包类型选择 JRE, 版本视你所游玩的版本要求而定
 
@@ -33,5 +33,5 @@ parent: Tutorials
 
 <div align="center"><img src="https://picbed-1300514373.cos.ap-nanjing.myqcloud.com/Server_Help/Tutorials/JavaDownload/Windows_x64_Java17.png"/></div>
 
-> .msi 为安装程序, 自动配置路径. 
+> .msi 为安装程序, 自动配置路径.  
 > .zip 为便携式, 需要自己在启动器里配置路径.
