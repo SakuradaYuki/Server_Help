@@ -27,7 +27,7 @@ parent: Tutorials
 > 包类型(Package Type)  
 > 版本(Version)  
 
-对于大部分用户来说(~~Linuxer 应该不会来看这篇文章吧~~), 操作系统选择 Windows, 硬件架构选择 x64, 包类型选择 JRE, 版本视你所游玩的版本要求而定
+对于大部分用户来说~~(Linuxer 应该不会来看这篇文章吧)~~, 操作系统选择 Windows, 硬件架构选择 x64, 包类型选择 JRE, 版本视你所游玩的版本要求而定
 
 例如, 我想下载 Windows 系统下, x64架构的Java17. 选择以后得到以下结果:
 
