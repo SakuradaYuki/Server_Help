@@ -17,7 +17,7 @@ title: SakuradaYuki
 description: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-remote_theme: SakuradaYuki/just-the-docs
+theme: just-the-docs
 
 permalink: pretty
 
