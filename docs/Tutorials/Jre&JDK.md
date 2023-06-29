@@ -12,6 +12,8 @@ parent: Tutorials
 
 # 下载
 
+[Link](https://adoptium.net/temurin/releases/)
+
 你会在打开后的网页中下方看到如此选择框:
 
 <div align="center"><img src="https://picbed-1300514373.cos.ap-nanjing.myqcloud.com/Server_Help/Tutorials/JavaDownload/Select_List.png"/></div>
